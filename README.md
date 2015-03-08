@@ -4,13 +4,14 @@ Tested with Zabbix 2.4 (http://www.zabbix.com/) and Docker 1.5 (https://www.dock
 
 ## Install
 
-1. Add a line from 'sudo' file to your sudo config
-2. copy 'zabbix-docker-discovery.py' and 'zabbix-docker-stats.py' to '/usr/local/bin'
-3. make it executable with root user
-4. copy 'userparameter_docker.conf' to '/etc/zabbix/zabbix_agentd.d/'
-5. You need to have 'EnableRemoteCommands=1' in Zabbix agent config
-6. restart zabbix-agent
-7. Import 'docker_zbx_export_templates.xml' into Zabbix and configure it
+1. 'pip install docker-py'
+2. Add a line from 'sudo' file to your sudo config
+3. copy 'zabbix-docker-discovery.py' and 'zabbix-docker-stats.py' to '/usr/local/bin'
+4. make it executable with root user
+5. copy 'userparameter_docker.conf' to '/etc/zabbix/zabbix_agentd.d/'
+6. You need to have 'EnableRemoteCommands=1' in Zabbix agent config
+7. restart zabbix-agent
+8. Import 'docker_zbx_export_templates.xml' into Zabbix and configure it
 
 ## The template contains
 
