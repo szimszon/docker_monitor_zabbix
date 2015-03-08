@@ -1,0 +1,1 @@
+zabbix ALL = (ALL) NOPASSWD: /usr/local/bin/zabbix-docker-discovery.py,/usr/local/bin/zabbix-docker-stats.py
